@@ -1,0 +1,81 @@
+.site-header {
+  background-color: rgba(0, 2, 73, 1);
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-navigation {
+  display: block;
+  width: auto;
+  margin-top: 20px;
+}
+
+.main-navigation ul {
+  display: flex;
+  gap: 64px;
+}
+
+.main-navigation ul a {
+  color: rgba(250, 249, 240, 1);
+  font-family: "Fira Code", sans-serif;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.home-section-1 {
+  background-color: #000249;
+  margin-top: -16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 220px;
+}
+
+.text-content h1,
+.text-content p {
+  color: #faf9f0;
+  margin: 0px;
+}
+
+.text-content p {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Fira code";
+}
+
+.text-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2px;
+  margin-top: 220px;
+}
+.social-icons {
+  display: flex;
+  gap: 25px;
+  margin-top: 37px;
+}
