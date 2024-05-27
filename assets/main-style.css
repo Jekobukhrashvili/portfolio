@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header-Start */
 .site-header {
   background-color: rgba(0, 2, 73, 1);
 }
@@ -32,11 +39,11 @@
   font-weight: 500px;
   font-size: 20px;
   line-height: 27px;
-}
+} /* Header_End */
 
+/* first_section */
 .home-section-1 {
   background-color: #000249;
-  margin-top: -16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,4 +85,86 @@
   display: flex;
   gap: 25px;
   margin-top: 37px;
+} /* First-Section-End */
+
+/* Second-Section-Start */
+.home-section-2 {
+  background-color: #000249;
+}
+
+.second-container {
+  max-width: 1440px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.container-flex {
+  height: 625px;
+  display: flex;
+  justify-content: center;
+  gap: 178px;
+}
+
+.card4,
+.card2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.second-container h2 {
+  color: #f6490d;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Fira code";
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.content {
+  width: 562px;
+}
+.content h3 {
+  color: #faf9f0;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 16px;
+}
+
+.content p {
+  font-size: 20px;
+  font-family: "Fira code";
+  font-weight: 400;
+  color: #faf9f0;
+  line-height: 30px;
+  width: 540px;
+}
+
+.paragraph {
+  margin-bottom: 40px;
+}
+.paragraph p {
+  margin: 30px;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.content-button {
+  padding: 19px 26px;
+  border-radius: 4px;
+  border-color: #1dced8;
+  border-width: 2px;
+  color: #1dced8;
+  background-color: #000249;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Fira code";
 }
