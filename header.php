@@ -53,7 +53,24 @@
                     );
                 ?>
             </nav><!-- #site-navigation -->
+            <div class="burger-menu">
+              <input type="checkbox" id="menu">
+              <label for="">
+                <span class="burger-menu-icon">&#9776;</span>
+              </label>
+                <div class="sidebar-nav">
+                    <?php
+                        wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-1',
+                            'menu_id'        => 'primary-menu-mobile',
+                            'menu_class'     => 'header-menu'
+                        )
+                        );
+                    ?>
+                </div>
             </div>
+        </div>
     </div>
 		
 </header><!-- #masthead -->

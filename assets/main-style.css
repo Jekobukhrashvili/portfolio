@@ -10,7 +10,6 @@
 }
 
 .container {
-  max-width: 1150px;
   margin: 0 auto;
   height: 100px;
 }
@@ -20,6 +19,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .main-navigation {
@@ -33,6 +33,9 @@
   gap: 64px;
 }
 
+#menu-item-432 a {
+  color: red;
+}
 .main-navigation ul a {
   color: rgba(250, 249, 240, 1);
   font-family: "Fira Code", sans-serif;
@@ -93,7 +96,6 @@
 }
 
 .second-container {
-  max-width: 1440px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -107,7 +109,7 @@
 }
 
 .card4,
-.card2{
+.card2 {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -167,4 +169,193 @@
   font-size: 20px;
   font-weight: 500;
   font-family: "Fira code";
+} /* Second-Section-End */
+
+/* third-Section-Start */
+.home-section-3 {
+  background-color: #000249;
+}
+
+.third-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.third-container h2 {
+  color: #f6490d;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Fira code";
+  text-align: center;
+  margin-bottom: 72px;
+}
+.image-container {
+  width: 1240px;
+  height: 1660px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  gap: 24px;
+}
+.image-container img {
+  width: 397px;
+  height: 397px;
+} /* Third-Section-End */
+
+/* Footer-start */
+.site-footer {
+  background-color: #000249;
+}
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100px;
+}
+.site-footer p {
+  color: #fbe8d3;
+  font-size: 17px;
+  font-family: "Fira code";
+  text-align: center;
+  padding: 32px;
+} /* Footer-End */
+
+/* Contact-Page */
+.contact-page {
+  background-color: #000249;
+  height: 71vh;
+}
+
+.contact-container {
+  width: 790px;
+  height: 380px;
+  margin: 0 auto;
+}
+
+.Contact-flex {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 796px;
+}
+
+.wpcf7-form-control {
+  background-color: #000249;
+  color: white;
+}
+
+.Contact-flex label,
+.Contact-flex span,
+.Contact-flex input {
+  display: inline-block;
+  width: 796px;
+  height: 52px;
+}
+
+.Contact-flex textarea {
+  width: 796px;
+  height: 125px;
+  border: 1px solid white;
+  padding-top: 7px;
+  padding-left: 12px;
+  font-size: 22px;
+  font-weight: "Fira code";
+  color: rgb(255, 255, 255);
+}
+.Contact-flex label {
+  color: red;
+}
+.Contact-flex input {
+  font-size: 22px;
+  font-family: "Fira code";
+  font-weight: 400;
+  border: 1px solid white;
+  padding-left: 12px;
+  width: 796px;
+  color: #ff0000;
+}
+
+.Contact-flex input::placeholder,
+.Contact-flex textarea::placeholder {
+  color: white;
+  font-size: 22px;
+  font-weight: 400px;
+}
+
+.Contact-flex input[type="submit"] {
+  color: #1dced8;
+  border: 2px solid #1dced8;
+  padding: 19px 26px;
+  height: auto;
+  width: auto;
+  border-radius: 4px;
+  margin-left: 582px;
+  cursor: pointer;
+} /* Contact-Page-End */
+
+/* Sidebar-Menu */
+
+.burger-menu {
+  color: white;
+  font-size: 22px;
+  display: none;
+}
+
+/* #menu {
+  display: none;
+} */
+
+.sidebar-nav {
+  position: fixed;
+  left: -250px;
+  height: 100%;
+  background-color: #09164d;
+  top: 0;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  transition: all 300ms;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+#primary-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: start;
+  justify-content: center;
+}
+
+#primary-menu-mobile li a {
+  color: white;
+  font-family: "Fira code";
+  text-decoration: none;
+}
+
+#primary-menu-mobile li {
+  padding: 10px;
+}
+
+#menu:checked ~ .sidebar-nav {
+  left: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .burger-menu {
+    display: inline-block;
+  }
+  .main-navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 737px) {
 }
