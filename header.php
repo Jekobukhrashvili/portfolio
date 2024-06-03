@@ -55,7 +55,7 @@
             </nav><!-- #site-navigation -->
             <div class="burger-menu">
               <input type="checkbox" id="menu">
-              <label for="">
+              <label for="menu">
                 <span class="burger-menu-icon">&#9776;</span>
               </label>
                 <div class="sidebar-nav">

@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
-/* Header-Start */
-.site-header {
-  background-color: rgba(0, 2, 73, 1);
+.home-page {
+  background-color: #000249;
 }
 
+/* HEADER-START*/
 .container {
   margin: 0 auto;
   height: 100px;
+  background-color: #000249;
+  width: 100%;
 }
 
 .header-flex {
@@ -42,11 +44,10 @@
   font-weight: 500px;
   font-size: 20px;
   line-height: 27px;
-} /* Header_End */
+} /* HEADER-END */
 
-/* first_section */
+/* FIRST-SECTION */
 .home-section-1 {
-  background-color: #000249;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,13 +89,9 @@
   display: flex;
   gap: 25px;
   margin-top: 37px;
-} /* First-Section-End */
+} /* FIRST-SECTION-END */
 
-/* Second-Section-Start */
-.home-section-2 {
-  background-color: #000249;
-}
-
+/* SECOND-SECTION-START */
 .second-container {
   justify-content: center;
   display: flex;
@@ -165,16 +162,13 @@
   border-color: #1dced8;
   border-width: 2px;
   color: #1dced8;
-  background-color: #000249;
   font-size: 20px;
   font-weight: 500;
   font-family: "Fira code";
-} /* Second-Section-End */
-
-/* third-Section-Start */
-.home-section-3 {
   background-color: #000249;
-}
+} /* SECOND-SECTION-END */
+
+/* THIRD-SECTION-START */
 
 .third-container {
   max-width: 1440px;
@@ -191,7 +185,7 @@
   margin-bottom: 72px;
 }
 .image-container {
-  width: 1240px;
+  width: 1440px;
   height: 1660px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -201,14 +195,15 @@
 .image-container img {
   width: 397px;
   height: 397px;
-} /* Third-Section-End */
+} /* THIRD-SECTION-END */
 
-/* Footer-start */
+/* FOOTER-START */
 .site-footer {
   background-color: #000249;
 }
 .footer-container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   height: 100px;
 }
@@ -218,11 +213,10 @@
   font-family: "Fira code";
   text-align: center;
   padding: 32px;
-} /* Footer-End */
+} /* FOOTER-END */
 
-/* Contact-Page */
+/* CONTACT-PAGE */
 .contact-page {
-  background-color: #000249;
   height: 71vh;
 }
 
@@ -241,7 +235,6 @@
 }
 
 .wpcf7-form-control {
-  background-color: #000249;
   color: white;
 }
 
@@ -292,25 +285,23 @@
   border-radius: 4px;
   margin-left: 582px;
   cursor: pointer;
-} /* Contact-Page-End */
+} /* CONTACT-PAGE-END */
 
-/* Sidebar-Menu */
-
+/* SIDEBAR-MENU */
 .burger-menu {
   color: white;
   font-size: 22px;
   display: none;
 }
 
-/* #menu {
+#menu {
   display: none;
-} */
+}
 
 .sidebar-nav {
   position: fixed;
   left: -250px;
   height: 100%;
-  background-color: #09164d;
   top: 0;
   width: 250px;
   display: flex;
@@ -344,18 +335,68 @@
   padding: 10px;
 }
 
+.burger-menu-icon {
+  cursor: pointer;
+}
+
 #menu:checked ~ .sidebar-nav {
   left: 0;
 }
+
+/* SIDEBAR-MENU-END */
 
 @media screen and (max-width: 1023px) {
   .burger-menu {
     display: inline-block;
   }
+
   .main-navigation {
     display: none;
+  }
+  .container-flex {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 140px;
+  }
+
+  .second-container {
+    justify-content: center;
+    align-items: center;
+    gap: 260px;
+    margin-bottom: 270px;
+  }
+
+  .image-container {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .third-container {
+    height: 2832px;
+  }
+
+  .site-footer p {
+    padding: 49px;
+  }
+
+  .header-flex {
+    display: flex;
+    justify-content: end;
+    padding: 15px;
   }
 }
 
 @media screen and (max-width: 737px) {
+  .third-container {
+    height: 2115px;
+  }
 }
